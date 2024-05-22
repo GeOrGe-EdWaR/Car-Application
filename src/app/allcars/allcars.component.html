@@ -1,0 +1,27 @@
+<div class="row my-5 px-4">
+  <ng-container *ngFor="let item of items">
+    <div class="col-md-4 col-sm-6">
+      <div class="card">
+        <img
+          src="https://fakeimg.pl/250x150"
+          class="card-img-top"
+          alt="Fissure in Sandstone"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            {{ item.make }} <span class="fw-semibold"> {{ item.model }}</span>
+          </h5>
+          <p class="text-secondary fw-semibold card-text">
+            Year : {{ item.year }}
+          </p>
+          <p class="text-secondary fw-semibold card-text">
+            Color : {{ item.color }}
+          </p>
+          <a [routerLink]="['/item', item.id]" class="btn btn-primary"
+            >View details</a
+          >
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

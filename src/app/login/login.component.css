@@ -1,0 +1,32 @@
+span {
+  color: #1572d3;
+}
+.social-img {
+  padding-left: 70px;
+}
+.main-h2 {
+  font-size: 40px;
+}
+.form-control {
+  padding: 10px 20px;
+  background: #b0cff0;
+}
+.btn {
+  width: 100%;
+  padding: 10px 60px;
+  margin-left: 70px;
+}
+.phone {
+  margin-top: 450px;
+  height: 400px;
+  margin-left: 200px;
+}
+input {
+  margin-left: 60px;
+}
+.mainDiv {
+  margin-top: 20px;
+}
+.main {
+  padding-top: 270px;
+}

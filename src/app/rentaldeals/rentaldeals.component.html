@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row px-5 py-5">
+    <div class="col">
+      <input
+        type="text"
+        class="form-control shadow p-3 mb-5 bg-body-tertiary rounded"
+        placeholder="Search By Name"
+      />
+    </div>
+    <div class="col-auto">
+      <button type="button" class="btn btn-primary p-3">Search</button>
+    </div>
+  </div>
+  <h2
+    class="text d-flex justify-content-center align-items-ceter p-5 fw-light fs-5"
+  >
+    POPULAR RENTAL DEALS
+  </h2>
+  <h1 class="fw-bold text-center pb-5">Most popular cars rental deals</h1>
+
+  <div class="row my-5">
+    <ng-container *ngFor="let item of items">
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img
+            src="https://fakeimg.pl/250x150"
+            class="card-img-top"
+            alt="Fissure in Sandstone"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              {{ item.make }} <span class="fw-semibold"> {{ item.model }}</span>
+            </h5>
+
+            <p class="text-secondary fw-semibold card-text">
+              Year : {{ item.year }}
+            </p>
+            <p class="text-secondary fw-semibold card-text">
+              Color : {{ item.color }}
+            </p>
+            <p class="text-secondary fw-semibold card-text">
+              Price : {{ item.price }}
+            </p>
+            <p class="text-secondary fw-semibold card-text">
+              Color : {{ item.color }}
+            </p>
+
+            <a [routerLink]="['/item', item.id]" class="btn btn-primary"
+              >View details</a
+            >
+          </div>
+
+        </div>
+      </div>
+    </ng-container>
+    <div class="btn btn-primary mt-4" routerLink="/allcars">
+      See all Cars
+    </div>
+  </div>
+</div>

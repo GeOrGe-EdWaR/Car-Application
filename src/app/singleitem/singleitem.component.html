@@ -1,0 +1,13 @@
+<div *ngIf="PostData" class="">
+  <div class="row">
+    <div class="col-md-5 py-5 col-sm-3">
+      <img class="img-fluid" src="../../assets/grey Audi.png" alt="" />
+    </div>
+    <div class="col-md-5 py-5 col-sm-3">
+      <p class="text-secondary">Name : {{ PostData.make }}</p>
+      <p class="text-secondary">Model : {{ PostData.model }}</p>
+      <p class="text-secondary">Color: {{ PostData.color }}</p>
+      <p class="text-secondary">Price : {{ PostData.price }} $</p>
+    </div>
+  </div>
+</div>
